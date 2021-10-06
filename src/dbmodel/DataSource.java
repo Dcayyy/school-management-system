@@ -9,9 +9,8 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class DataSource {
-
     public static final String DB_NAME = "School_Management_SystemDB.db";
-    public static final String CONNECTION_STRING = "jdbc:sqlite:C:\\Users\\Zahari Mikov\\IdeaProjects\\School Management System with DB\\" + DB_NAME;
+    public static final String CONNECTION_STRING = "C:\\Users\\Zahari Mikov\\IdeaProjects\\School Management System with DB\\School_Management_SystemDB.db\\" + DB_NAME;
 
     public static final String TABLE_USERS = "users";
     public static final String COLUMN_USERS_USER_ID = "user_id";
@@ -557,7 +556,6 @@ public class DataSource {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-            return false;
         }
         return false;
     }
